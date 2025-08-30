@@ -1,7 +1,7 @@
 export const config = { runtime: 'edge' };
 
 export default async function handler(req, ctx) {
-  const GAS_EXEC = 'https://script.google.com/macros/s/AKfycbxDWm4NNPuLR9T9iKIM2VDc3wnz3MZeHX2p3LU7XSHX1eaG6ntTDHQtQfpeLABsBWvxXw/exec'; // ← 改你的 /exec
+  const GAS_EXEC ='https://script.google.com/macros/s/AKfycbxDMm5Lztc6RnA58fapz7SHJ5oBRfS0ZhNwng4Yp4d1oPYZvrWRrkbPjzw2H9NyD5dJ/exec'; // ← 改你的 /exec
   const res = new Response('OK', { status: 200, headers: { 'content-type': 'text/plain' } });
   ctx.waitUntil((async () => {
     try {
